@@ -1,0 +1,21 @@
+/*
+ * @Author: 赵凌宇（BeardedManZhao） 创建
+ * progressBar-js 库 源代码：https://github.com/BeardedManZhao/progressBar-js
+ */
+
+.progress-bar {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.progress-bar > .progress-bar-fill {
+    display: inline-block;
+    height: 100%;
+    width: 0;
+    border-radius: 20px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.5), #8c00ff);
+    transition: all 0.5s ease;
+}

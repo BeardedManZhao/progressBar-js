@@ -1,0 +1,40 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      background: rgba(0, 0, 0, 0.7);
+    }
+
+    p {
+      color: white;
+    }
+  </style>
+  <link href="css/progressBar.css" rel="stylesheet">
+  <title>progressBar-js 示例</title>
+</head>
+
+<body>
+
+<!-- 这里准备一个元素用来展示进度条的进度数值，这个数值可以在函数中获取并设置 -->
+<p class="p"></p>
+
+<div style="width: 100%;height: 20px;">
+  <!-- 这里就是进度条本身了 -->
+  <div class="progress-bar"></div>
+</div>
+
+</body>
+
+<script src="js/progressBar.min.js"></script>
+<script>
+  // 实例化一个进度条对象，在这里我们传递了两个参数，第一个参数是进度条元素，第二个参数是回调函数，这个回调函数会在进度条的进度发生变化时调用。
+  const progressBar = new ProgressBar(document.querySelector(".progress-bar"), (now, max) => document.querySelector(".p").innerText = `进度为：${(now / max * 100).toFixed(2)}%`);
+  // 使用此函数可以直接设置进度条的进度，不需要设置最大值，第一个参数是进度值，第二个参数是进度条的背景颜色，第三个参数是进度条的填充颜色。
+  progressBar.setProgress(61.012, 'linear-gradient(to right, rgba(255, 255, 255, 0.5), #8c00ff)', 'linear-gradient(to right, rgba(255, 255, 255, 0.5), #0f0)');
+</script>
+
+
+</html>
