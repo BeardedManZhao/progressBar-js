@@ -53,3 +53,10 @@ setInterval(() => {
 |-------------------|------|--------------------------------------------------------------------------|
 | progress-bar      | no   | 此类名用来标识一个进度条元素，被此类名的元素将会被渲染成进度条，您可以在页面中添加多个进度条元素，也可以尝试修改 css 样式，但不一定会生效。 |
 | progress-bar-fill | yes  | 此类名用来标识进度条的填充元素，被此类名的元素将会被渲染成进度条的填充元素。您最好避免使用此类名，否则可能会造成影响。              |
+
+## 此库的示例界面
+
+您可以在 [index.html](https://github.com/BeardedManZhao/progressBar-js/blob/main/web/index.html) 文件中查看到对应的示例页面，其中演示了一个基本的使用，下面是界面的图！
+
+![image](https://github.com/BeardedManZhao/progressBar-js/assets/113756063/cb5fd576-ed4c-4420-9e13-d19ed33eb825)
+
